@@ -1,0 +1,14 @@
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    padding: 30px;
+    color: white;
+}

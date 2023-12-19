@@ -1,0 +1,27 @@
+body{
+    background-color: #1f2223;
+}
+.home{
+    text-align: center;
+    margin: 0 50px 0 50px;
+    padding: 0 30px 0 30px;
+    /* border: 2px solid green;  */
+    background-color: #181a1b;
+}
+.home-section{
+   margin-top: 10px;
+    text-align: center;
+}
+.content-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    padding: 20px; 
+}
+.content-title{
+    text-transform: uppercase;
+    color: white;
+    padding-top: 10px;
+    /* margin-top: 20px; */
+}

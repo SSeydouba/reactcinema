@@ -1,0 +1,56 @@
+/* moviecard.css */
+
+.movie-card {
+    width: 20%; 
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+    background-color: rgb(50, 46, 46);
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .movie-card:hover {
+    background-color: #ffffff; /* Couleur de blanchiment au survol */
+  }
+  
+  img {
+    width: 190px;
+    height: 200px;
+    gap: 10px;
+    object-fit: cover;
+  }
+  
+  .Card {
+    width: 100%; 
+  }
+  
+  .movie-title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90%;
+    border: 2px solid rgb(103, 95, 95);
+    border-radius: 10%;
+    margin: 0;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour le titre */
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .movie-card:hover .movie-title {
+    opacity: 0.9; /* Ajustez la valeur d'opacité selon vos besoins */
+  }
+  

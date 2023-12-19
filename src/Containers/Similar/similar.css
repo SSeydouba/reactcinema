@@ -1,0 +1,8 @@
+.content-cards{
+    background-color: #181a1b;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+}
