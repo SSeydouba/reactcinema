@@ -63,30 +63,28 @@ const Actor = () => {
   return (
     <div className="actor">
       <section className="content-actor">
-        {thisActor && (
-          <>
-            <div className="actor-content">
-              <img
-                className="actor-image"
-                src={`https://image.tmdb.org/t/p/w500/${thisActor.profile_path}`}
-                alt={thisActor.name}
-              />
-              <h5>Date de naissance</h5>
-              {new Date(thisActor.birthday).toLocaleDateString("fr-FR")}
-              <h5>Joué dans</h5>
-              {thisActor.popularity} films
-            </div>
-          </>
-        )}
+        {thisActor || thisPerson ? (
+          <div className="actor-content">
+            <img
+              className="actor-image"
+              src={`https://image.tmdb.org/t/p/w500/${thisActor?.profile_path}`}
+              alt={thisActor?.name}
+            />
+            <h5>Date de naissance</h5>
+            {thisActor && new Date(thisActor.birthday).toLocaleDateString("fr-FR")}
+            <h5>Joué dans</h5>
+            {thisPerson && thisPerson.length} films
+          </div>
+        ) : null}
       </section>
       <div className="content">
         <section className="content-credits">
           {credits.length > 0 && (
             <>
-             <h2>casting</h2>
+              <h2>casting</h2>
               <div className="card-credits">
-                {credits.slice(0, 11).map((item) => <ActorCard  actor={item} />)}
-              </div>       
+                {credits.slice(0, 11).map((item) => <ActorCard key={item.id} actor={item} />)}
+              </div>
             </>
           )}
         </section>
