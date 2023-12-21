@@ -1,13 +1,12 @@
 .headerContainer {
     background-color: rgb(120, 94, 6);
-    background-image: none;
     display: block;
     justify-content:center;
     /* align-items: center; */
    text-align: center;
     width: auto;
     height: 200px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
   }
   
   .headerContainer img{
@@ -25,29 +24,13 @@
     color: white;
   }
 
-  .search {
-    width: 250px;
-    height: 30px;
-    background-color: rgb(60, 56, 56);
-  }
   .content-searh{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    /* justify-content: center; */
     align-items: center;
     text-align: center;
   }
  
- .content-searh div {
-    color: white;
-    font-size: 10px;
-    font-weight: bold;
-    background-color: black;
-    width:35px;
-    height: 35px;
-    line-height: 40px;  /* Centrer le texte verticalement */
-
-  }
-  
-  /* Ajoutez d'autres styles au besoin */
   
   

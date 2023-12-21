@@ -1,5 +1,4 @@
 import "./nav.css";
-import { useParams } from "react-router-dom";
 
 const Nav = (props) => {
     const navArr = props.nav

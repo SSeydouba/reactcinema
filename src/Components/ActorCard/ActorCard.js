@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ActorCard = (props) => {
   const actorArr = props.actor;
-  console.log(actorArr);
+  //console.log(actorArr);
 
   return (
     <div className="actor-card" id="casting">
