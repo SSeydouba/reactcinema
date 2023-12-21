@@ -1,8 +1,8 @@
 /* moviecard.css */
 
 .movie-card {
-    width: 20%; 
-    margin: 10px;
+    /* width: 20%;  */
+    /* margin: 10px; */
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -12,6 +12,7 @@
     background-color: rgb(50, 46, 46);
     position: relative;
     transition: background-color 0.3s ease;
+    object-fit: cover;
   }
   
   .movie-card:hover {

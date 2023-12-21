@@ -3,11 +3,10 @@ body{
 }
 .home{
     text-align: center;
-    margin: 50px;
-    padding: 30px;
+    margin: 0 50px 0 50px;
+    padding: 0 30px 0 30px;
     /* border: 2px solid green;  */
     background-color: #181a1b;
-    object-fit: contain;
 }
 .home-section{
    margin-top: 10px;
