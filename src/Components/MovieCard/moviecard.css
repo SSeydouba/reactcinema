@@ -19,9 +19,9 @@
     background-color: #ffffff; /* Couleur de blanchiment au survol */
   }
   
-  img {
-    width: 100px;
-    height: 100px;
+ .cardImg {
+    width: 200px;
+    height: 200px;
     gap: 10px;
     object-fit: cover;
   }

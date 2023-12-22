@@ -35,7 +35,7 @@ const Similar = () => {
       <div className="title">
         <h2>Films similaires</h2>
       </div>
-      <div className="content-cards">
+      <div className="similar-cards">
         {similar ? (
           similar.slice(0, 12).map((item) => <SimilarCard  similar={item} />)
         ) : (

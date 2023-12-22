@@ -34,7 +34,7 @@ const fetchData = async () => {
   }, [params.movieId]);
 
   return (
-    <div className="movie">
+    <div className="movie-contenair">
       {thisMovie ? (
         <div className="movie-content">
 
@@ -63,10 +63,11 @@ const fetchData = async () => {
       ) : (
         <p>Chargement des données...</p>
       )}
-      {/* Inclusion des composants Actor et Similar */}
-      <Actor />
-      <Similar />
-
+      
+        {/* Inclusion des composants Actor et Similar */}
+        <Actor />
+       
+        <Similar />
     </div>
   );
 };

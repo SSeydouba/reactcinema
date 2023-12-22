@@ -13,11 +13,13 @@ const ActorCard = (props) => {
             <img 
               src={`https://image.tmdb.org/t/p/w500/${actorArr.profile_path}`}
               alt={actorArr.name} 
+              className="image-actor"
             />
           ) : actorArr.poster_path ? (
             <img 
               src={`https://image.tmdb.org/t/p/w500/${actorArr.poster_path}`}
               alt={actorArr.name} 
+              className="image-actor-details"
             />
           ) : null}
         </div>

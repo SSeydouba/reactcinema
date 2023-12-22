@@ -12,6 +12,7 @@ const SimilarCard = (props) => {
           <img
             src={`https://image.tmdb.org/t/p/w500/${similarResp.poster_path}`}
             alt={similarResp.name}
+            className="imagesimilarcard"
           />
         </div>
     

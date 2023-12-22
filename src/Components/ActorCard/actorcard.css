@@ -1,5 +1,12 @@
-img{
-    width: 150px;
-    height: 200px;
+.actor-img .image-actor{
+    width: 200px;
+    height: 210px;
+    object-fit: cover;
+}
+
+.actor-img .image-actor-details{
+    width: 200px;
+    height: 210px;
+    object-fit: cover;
 }
 

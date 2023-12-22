@@ -5,15 +5,14 @@
     /* align-items: center; */
    text-align: center;
     width: auto;
-    height: 200px;
+    height: 280px;
     /* border: 2px solid green; */
   }
   
-  .headerContainer img{
-    width: 70px;
-    height: auto;
-    margin: 0 auto;
-  }
+  .headerContainer .imagelogo{
+    height: 82px;
+    margin: 14px;
+}
   h1{
     text-align: center;
     /* padding: 45px 0; */
