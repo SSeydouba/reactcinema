@@ -53,7 +53,7 @@ const SearchMovies = () => {
       {searchterm && (
         <div className="movie-list">
           {searchResults.map((movie) => (
-            <SearchMoviesCard key={movie.id} movie={movie} searchterm={searchterm} />
+            <SearchMoviesCard key={movie.id} movie={movie}  />
           ))}
         </div>
       )}

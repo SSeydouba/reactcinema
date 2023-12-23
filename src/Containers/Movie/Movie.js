@@ -1,3 +1,4 @@
+// Movie.js
 import "./movie.css";
 import { useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
@@ -9,14 +10,14 @@ import Nav from "../Nav/Nav";
 const Movie = () => {
   const params = useParams();
   const [thisMovie, setThisMovie] = useState(null);
-  
-const fetchData = async () => {
+
+  const fetchData = async () => {
     try {
       const response = await fetch(
         `https://api.themoviedb.org/3/movie/${params.movieId}?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR&page=1`
       );
 
-      if (!response) {
+      if (!response.ok) {
         throw new Error("Erreur lors de la récupération des données");
       }
 
@@ -27,8 +28,6 @@ const fetchData = async () => {
     }
   };
 
- 
-  
   useEffect(() => {
     fetchData();
   }, [params.movieId]);
@@ -37,7 +36,6 @@ const fetchData = async () => {
     <div className="movie-contenair">
       {thisMovie ? (
         <div className="movie-content">
-
           {/* inclusion nav */}
           <Nav nav={thisMovie} />
 
@@ -45,16 +43,16 @@ const fetchData = async () => {
             <MovieCard movie={thisMovie} className="movie-card" />
             <div className=" title">
               <div>
-                Date de sortie: le &nbsp; 
+                Date de sortie: le &nbsp;
                 {new Date(thisMovie.release_date).toLocaleDateString("fr-FR")}
               </div>
-              <div>Casting John Cena, Alison Brie, Juan Pablo Raba, Alice Eve, ...</div>             
-              <br/>
+              <div>Casting John Cena, Alison Brie, Juan Pablo Raba, Alice Eve, ...</div>
+              <br />
               <div>Durée: {thisMovie.runtime} min</div>
               <div>
-                <br/>
+                <br />
                 <div>Synopsis et détails</div>
-                <br/>
+                <br />
                 {thisMovie.overview}
               </div>
             </div>
@@ -63,11 +61,10 @@ const fetchData = async () => {
       ) : (
         <p>Chargement des données...</p>
       )}
-      
-        {/* Inclusion des composants Actor et Similar */}
-        <Actor />
-       
-        <Similar />
+
+      {/* Inclusion des composants Actor et Similar */}
+      <Actor />
+      <Similar />
     </div>
   );
 };
